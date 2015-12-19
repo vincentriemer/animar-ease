@@ -1,0 +1,31 @@
+{
+  "name": "animar-ease",
+  "version": "0.0.1",
+  "description": "Easing functions for use with animar.",
+  "main": "index.js",
+  "scripts": {
+    "clean-lib": "rimraf lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run clean-lib && ./node_modules/.bin/babel ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentriemer/animar-ease.git"
+  },
+  "keywords": [
+    "animation",
+    "easing",
+    "animar"
+  ],
+  "author": "Vincent Riemer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vincentriemer/animar-ease/issues"
+  },
+  "homepage": "https://github.com/vincentriemer/animar-ease#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "rimraf": "^2.4.4"
+  }
+}
